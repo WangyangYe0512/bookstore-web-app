@@ -1,0 +1,125 @@
+import React, { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { MDBContainer, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn } from 'mdb-react-ui-kit';
+import Cookies from 'js-cookie';
+import axios from 'axios';
+
+function BookDetail() {
+  let [searchParams] = useSearchParams();
+  const bookId = searchParams.get('id'); // 假设URL中的查询参数名为id
+  const [bookDetail, setBookDetail] = useState(null);
+  const cookiesToken=Cookies.get("token"); // get user token from cookie
+  const [isLoggedIn,setIsLoggedIn]=useState(cookiesToken!==undefined?true:false);
+  console.log(isLoggedIn)
+
+  useEffect(() => {
+    async function fetchBookDetail() {
+      const response = await fetch(`https://www.googleapis.com/books/v1/volumes/${bookId}`);
+      const data = await response.json();
+      setBookDetail(data);
+    }
+    
+    fetchBookDetail();
+  }, [bookId]);
+
+  if (!bookDetail) {
+    return <div>Loading...</div>;
+  }
+
+  const { volumeInfo, saleInfo } = bookDetail;
+  const {
+    title,
+    authors,
+    publisher,
+    publishedDate,
+    pageCount,
+    printType,
+    language,
+    description,
+    imageLinks
+  } = volumeInfo;
+  const stripHtml = html => {
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    return doc.body.textContent || "";
+  };
+
+  const thumbnail = imageLinks?.thumbnail || 'https://www.gmt-sales.com/wp-content/uploads/2015/10/no-image-found.jpg';
+
+  const handleAddToCart = async () => {
+    const bookData = {
+      book: {
+        bookId: bookId, // 这里应替换为当前书籍的真实 ID
+        title: title, // 替换为真实标题
+        thumbnail: thumbnail // 替换为真实缩略图 URL
+      },
+      quantity: 1,
+      price: saleInfo.listPrice.amount
+    };
+  
+    try {
+      const response = await axios.post('http://3.144.5.98:3000/api/cart/add', bookData, {
+        headers: { 'Authorization': `Bearer ${cookiesToken}` }
+      });
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  return (
+    <MDBContainer className="my-5">
+      <MDBCard className="mb-3">
+        <div className="row g-0">
+          <div className="col-md-3">
+            <MDBCardImage
+              src={thumbnail}
+              alt={title || 'Unknown Book Title'}
+              className='img-fluid rounded-start'
+              style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+            />
+          </div>
+          <div className="col-md-9">
+          <MDBCardBody>
+            <div className="d-flex justify-content-between">
+              <div style={{ marginLeft: '5%' }}> {/* 向右移动内容 */}
+                <MDBCardTitle>{title || 'Unknown Book Title'}</MDBCardTitle>
+                <MDBCardText><strong>Author(s):</strong> {authors ? authors.join(', ') : 'Unknown Author'}</MDBCardText>
+                <MDBCardText><strong>Category:</strong> {volumeInfo.categories ? volumeInfo.categories.join(', ') : 'Unknown Categories'}</MDBCardText>
+                <MDBCardText><strong>Content Version:</strong> {volumeInfo.contentVersion || 'Unknown Content Version'}</MDBCardText>
+                <MDBCardText><strong>ISBN:</strong> {volumeInfo.industryIdentifiers ? volumeInfo.industryIdentifiers.map(identifier => `${identifier.type}: ${identifier.identifier}`).join(', ') : 'Unknown ISBN'}</MDBCardText>
+                <MDBCardText><strong>Publisher:</strong> {publisher || 'Unknown Publisher'}</MDBCardText>
+                <MDBCardText><strong>Published Date:</strong> {publishedDate || 'Unknown Published Date'}</MDBCardText>
+                <MDBCardText><strong>Page Count:</strong> {pageCount || 'Unknown Page Count'}</MDBCardText>
+                <MDBCardText><strong>Print Type:</strong> {printType || 'Unknown Print Type'}</MDBCardText>
+                <MDBCardText><strong>Language:</strong> {language || 'Unknown Language'}</MDBCardText>
+              </div>
+              <div className="d-flex flex-column align-items-end">
+                {saleInfo.saleability === 'NOT_FOR_SALE' && (
+                  <MDBCardText className="text-end">This Book is not for sale.</MDBCardText>
+                )}
+                {saleInfo.saleability === 'FOR_SALE' && (
+                  <>
+                    <MDBCardText className="text-end"><strong>Price:</strong> {saleInfo.listPrice.amount} {saleInfo.listPrice.currencyCode}</MDBCardText>
+                    {isLoggedIn === true && (
+                      <MDBBtn onClick={handleAddToCart} style={{ alignSelf: 'center' }}>Add to Cart</MDBBtn>
+                    )}
+                  </>
+                )}
+                <br />
+                {isLoggedIn === true && (
+                  <MDBBtn style={{ alignSelf: 'center' }}>Add to BookList</MDBBtn>
+                )}
+              </div>
+            </div>
+          </MDBCardBody>
+          </div>
+        </div>
+        <MDBCardBody>
+          <MDBCardText><strong>Description:</strong> {description ? stripHtml(description) : 'No Description Available.'}</MDBCardText>
+        </MDBCardBody>
+      </MDBCard>
+    </MDBContainer>
+  );
+}
+
+export default BookDetail;

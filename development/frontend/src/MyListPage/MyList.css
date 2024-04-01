@@ -1,0 +1,85 @@
+.review-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+  
+  .review-comment {
+    /* 中间部分的样式 */
+    margin-top: 10px; /* 与头部的间距 */
+  }
+  
+  .review-date {
+    /* 右下角日期的样式 */
+    align-self: flex-end;
+    margin-top: auto; /* 确保它总是在底部 */
+  }
+
+  .star-rating {
+    display: flex;
+  }
+  
+  .star-rating i {
+    cursor: pointer;
+    color: gold;
+  }
+
+  .modal-content {
+    max-height: 80vh; /* 或者您希望的最大高度 */
+    overflow-y: auto; /* 添加垂直滚动条 */
+    padding: 20px;
+  }
+
+  .modal-header {
+    /* 模态框头部布局 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .close {
+    /* 关闭按钮样式 */
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    /* 模态框主体布局 */
+    margin-bottom: 15px;
+  }
+  
+  .modal-body > * {
+    /* 模态框内部元素间距 */
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    /* 文本区域样式 */
+    width: 100%;
+    height: 100px; /* 可以根据需要调整 */
+    padding: 10px;
+  }
+  
+  .modal-footer {
+    /* 模态框底部布局 */
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* 按钮间距 */
+  .button-group .MDBBtn + .MDBBtn {
+    margin-left: 10px; /* 在按钮之间添加10px的间距 */
+  }
