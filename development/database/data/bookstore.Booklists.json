@@ -1,0 +1,764 @@
+[{
+  "_id": {
+    "$oid": "656b940406537971854f8ed1"
+  },
+  "userId": {
+    "$oid": "65610e2c15d53181b8b882df"
+  },
+  "booklistId": "656b940406537971854f8ecf",
+  "totalItems": 1,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "udlJEAAAQBAJ",
+      "etag": "pBeii5sWr6w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/udlJEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Job Ready Python",
+        "authors": [
+          "Haythem Balti",
+          "Kimberly A. Weiss"
+        ],
+        "publisher": "John Wiley & Sons",
+        "publishedDate": "2021-10-18",
+        "description": "<p><b>Get ready to take on Python with a practical and job-focused guide </b></p> <p><i>Job Ready Python </i>offers readers a straightforward and elegant approach to learning Python that emphasizes hands-on and employable skills you can apply to real-world environments immediately. </p> <p>Based on the renowned mthree Global Academy and Software Guild training program, this book will get you up to speed in the basics of Python, loops and data structures, object-oriented programming, and data processing. You’ll also get: </p> <ul> <li>Thorough discussions of Extract, Transform, and Load (ETL) scripting in Python </li> <li>Explorations of databases, including MySQL, and MongoDB—all commonly used database platforms in the field </li> <li>Simple, step-by-step approaches to dealing with dates and times, CSV files, and JSON files </li> </ul> <p>Ideal for Python newbies looking to make a transition to an exciting new career, <i>Job Ready Python</i> also belongs on the bookshelves of Python developers hoping to brush up on the fundamentals with an authoritative and practical new handbook. </p>",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1119817390"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781119817390"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 688,
+        "printedPageCount": 848,
+        "printType": "BOOK",
+        "categories": [
+          "Computers / Languages / Python",
+          "Computers / Programming / Object Oriented",
+          "Computers / Programming / Open Source",
+          "Computers / Programming / General"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE735CJjgcrxN5kWvF43rTq3QI1nI6-Pf6oJNpl5YoIyCrieopBPvnmHSb5kW7mbGDrgdIPFD2FZpt1aGksKYafpdvtKM9uffk-mJd-N3ouH1gC0yhOO9R6untVuJ8wSJEVVB5bIA&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE737-7Q5uKFJKSI-vM5ld-J5ezqnBirMU2XEbusI3O0vlo13KYpDnQHOYEW7hYCdDF-J0HKfQNdWLTgUgta_FDEE6JehrWKP_JJxHAG7Ktk1TDhTfvX7E9C-Uo0y9G-2KNMCjR2-&source=gbs_api",
+          "small": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE704q_3TuW2h4ez0hGALjtXnbdWE7yG2elEN90j0LOG8EFO9AnyLPr2V_AOKFkYIhWoNBqlHWEMlKh7i-JzkiuaxVAQlHN2Tc_cdF3q1gup9dsk-Lujdm_VPGuH0Oaq27SsHntMx&source=gbs_api",
+          "medium": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72HExLIgaP12PHw21a2HtqWypXE_9hhViHk__MJkHJ7rXdM_SYD1XE3nIBIMpBTNtXS-lLOyDG7uJ7eiq-W3K_um4bAPV9YWuJz-nCvrf5pB6i6CW77BEyd5DCflJ26TbqXPGcn&source=gbs_api",
+          "large": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE70EjMgCZLg0f6PfGidZd4nQLj7-z-W1BajaSVdPQGW1KBPkBIF3MwhHScOAjKMGShGShzZiBWT53XxAL_aOotdaQ8WpRujdRxnDNva1JqO9Uaaj5aq6oDLe6u0oq4-_ivaYmca7&source=gbs_api",
+          "extraLarge": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE734W8KxovRcH43-VPLkM1WQwHv9d2xuDVawbyGH750HmSdTstwVGMgdi5MWhcPO8guF3FKWtzuUsS3FsCZQruVOxLAY3neQHzu79TaRTI6KEDCVX2GzFLanMHIeg5ftPlkaMkrX&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.ca/books?id=udlJEAAAQBAJ&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=udlJEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=udlJEAAAQBAJ"
+      },
+      "layerInfo": {
+        "layers": [
+          {
+            "layerId": "geo",
+            "volumeAnnotationsVersion": "6"
+          }
+        ]
+      },
+      "saleInfo": {
+        "country": "CA",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 31.99,
+          "currencyCode": "CAD"
+        },
+        "retailPrice": {
+          "amount": 31.99,
+          "currencyCode": "CAD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=udlJEAAAQBAJ&rdid=book-udlJEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 31990000,
+              "currencyCode": "CAD"
+            },
+            "retailPrice": {
+              "amountInMicros": 31990000,
+              "currencyCode": "CAD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "CA",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.ca/books/download/Job_Ready_Python-sample-epub.acsm?id=udlJEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.ca/books/download/Job_Ready_Python-sample-pdf.acsm?id=udlJEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=udlJEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ],
+  "__v": 20,
+  "reviews": [
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "username": "wye",
+      "rating": 3,
+      "comment": "gooasdasdasd",
+      "date": {
+        "$date": "2023-12-02T22:48:14.016Z"
+      },
+      "hidden": true,
+      "_id": {
+        "$oid": "656bb42ec1c2e6707862084a"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 4.5,
+      "comment": "good",
+      "date": {
+        "$date": "2023-12-03T00:44:11.800Z"
+      },
+      "hidden": true,
+      "_id": {
+        "$oid": "656bcf5bea3e4f0b518d7d7e"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 5,
+      "comment": "I like it",
+      "date": {
+        "$date": "2023-12-03T00:58:09.002Z"
+      },
+      "hidden": true,
+      "_id": {
+        "$oid": "656bd2a1ea3e4f0b518d7df9"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 3.5,
+      "comment": "好好好",
+      "date": {
+        "$date": "2023-12-03T01:05:50.436Z"
+      },
+      "hidden": false,
+      "_id": {
+        "$oid": "656bd46eea3e4f0b518d7e4b"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 3,
+      "comment": "sss",
+      "date": {
+        "$date": "2023-12-03T01:08:40.272Z"
+      },
+      "hidden": false,
+      "username": "wye",
+      "_id": {
+        "$oid": "656bd51804e046d092e7f0eb"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 3.5,
+      "comment": "sadasdasd",
+      "date": {
+        "$date": "2023-12-03T01:11:07.387Z"
+      },
+      "hidden": false,
+      "username": "wye",
+      "_id": {
+        "$oid": "656bd5abfc4f8ce5d38f017c"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 5,
+      "comment": "atgjkc",
+      "date": {
+        "$date": "2023-12-03T01:12:07.477Z"
+      },
+      "hidden": false,
+      "username": "wye",
+      "_id": {
+        "$oid": "656bd5e7fc4f8ce5d38f01ae"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 5,
+      "comment": "aaaha",
+      "date": {
+        "$date": "2023-12-03T01:43:56.480Z"
+      },
+      "hidden": false,
+      "username": "wye",
+      "_id": {
+        "$oid": "656bdd5cfc4f8ce5d38f0287"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 1,
+      "comment": "really?",
+      "date": {
+        "$date": "2023-12-03T01:45:30.996Z"
+      },
+      "hidden": false,
+      "username": "wye",
+      "_id": {
+        "$oid": "656bddbafc4f8ce5d38f02d1"
+      }
+    },
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 4,
+      "comment": "oh well",
+      "date": {
+        "$date": "2023-12-03T01:48:05.886Z"
+      },
+      "hidden": false,
+      "username": "wye",
+      "_id": {
+        "$oid": "656bde55fc4f8ce5d38f030d"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "656ba782bb9d9c5433f25688"
+  },
+  "userId": {
+    "$oid": "65610e2c15d53181b8b882df"
+  },
+  "booklistId": "656ba782bb9d9c5433f25686",
+  "totalItems": 0,
+  "items": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "656bab58710a5212789daf80"
+  },
+  "userId": {
+    "$oid": "65610e2c15d53181b8b882df"
+  },
+  "booklistId": "656bab58710a5212789daf7e",
+  "totalItems": 2,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "p1heDgAAQBAJ",
+      "etag": "CDJ5agpI4dI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/p1heDgAAQBAJ",
+      "volumeInfo": {
+        "title": "Designing Data-Intensive Applications",
+        "subtitle": "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
+        "authors": [
+          "Martin Kleppmann"
+        ],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2017-03-16",
+        "description": "<p>Data is at the center of many challenges in system design today. Difficult issues need to be figured out, such as scalability, consistency, reliability, efficiency, and maintainability. In addition, we have an overwhelming variety of tools, including relational databases, NoSQL datastores, stream or batch processors, and message brokers. What are the right choices for your application? How do you make sense of all these buzzwords?</p><p>In this practical and comprehensive guide, author Martin Kleppmann helps you navigate this diverse landscape by examining the pros and cons of various technologies for processing and storing data. Software keeps changing, but the fundamental principles remain the same. With this book, software engineers and architects will learn how to apply those ideas in practice, and how to make full use of data in modern applications.</p><ul><li>Peer under the hood of the systems you already use, and learn how to use and operate them more effectively</li><li>Make informed decisions by identifying the strengths and weaknesses of different tools</li><li>Navigate the trade-offs around consistency, scalability, fault tolerance, and complexity</li><li>Understand the distributed systems research upon which modern databases are built</li><li>Peek behind the scenes of major online services, and learn from their architectures</li></ul>",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1491903104"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781491903100"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 616,
+        "printedPageCount": 658,
+        "printType": "BOOK",
+        "categories": [
+          "Computers / Business & Productivity Software / Databases",
+          "Computers / Data Science / Data Modeling & Design"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.26.29.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE70v140d9PQ_lbiOKwhcjope4zxPGMTz-RYqxHzVwywS_lS6oZDRNrkGwQmR5VSwL6vHuwW1q3Bk_3pmVjugJmsbT-XCxH84psfDBCGivnFM1C9K_VGa_7iCJ7xWDlldUSn5-wVa&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73ZhcFS0py87YzQ9NwKO7bgO-SN7WV-x1CyjHhKNiVqW5Z2ysJ5MUzyE0wb4scAK_ltQSsCzS_dScJ3NwK_SfrN7PEqUQldYvK-riVKCE6FVs-l4b34_G3pdSoKcNXcW6jCN0Eb&source=gbs_api",
+          "small": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71p6H1rUsdg74MiRpXOLJgOOa9S3UY5vfuAKSTfAVIbqXdlOafVrVkxHstexpLZVwqadznw3MY7fjtRcRjQjg-Pg5q9bgaP3cJ9cep9our14cxHfJBTNk5i1xuR_hFvG9KSpLVr&source=gbs_api",
+          "medium": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71TtX_gaC8ELg7UymDdY91Y_qeOT-iwfC6ha8IFaoRyUyAPDOSbJ00eqq0LqHeMsbGQdOOMK-gfmJSM1aL3jsKmRq8dsHcPsToQJjkiuSZNTOSzat3KqspCiS72Hv0o0-JLmox0&source=gbs_api",
+          "large": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE708iPz4PDSxxuUYzL09DHgEybwaADEhuARSh55KT7vwgyXoA2hZrEx50SvOy8DDM57F2b2L-5QeJlZwSlTqsAwN3HeGkpseibOO74lhuANhPiNwIOh9b4QRbbLPhXAcbPRCysLD&source=gbs_api",
+          "extraLarge": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70-_7vT7Mp9jCSpsXLBNCdKQcnUDx_F-HNTc630lJP-B_rkHDaPMZ-2WdmL3Lvjgt8vp_Jw566_qqqJQ71UU7Kpwls8riM8mv6Zp5agbDslRy_meyO0y8nzHtauOaLAEA93tINJ&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=p1heDgAAQBAJ&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=p1heDgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=p1heDgAAQBAJ"
+      },
+      "layerInfo": {
+        "layers": [
+          {
+            "layerId": "geo",
+            "volumeAnnotationsVersion": "31"
+          }
+        ]
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 50.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 50.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=p1heDgAAQBAJ&rdid=book-p1heDgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 50990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 50990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=p1heDgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "udlJEAAAQBAJ",
+      "etag": "M+8J/Nc0Diw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/udlJEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Job Ready Python",
+        "authors": [
+          "Haythem Balti",
+          "Kimberly A. Weiss"
+        ],
+        "publisher": "John Wiley & Sons",
+        "publishedDate": "2021-10-18",
+        "description": "<p><b>Get ready to take on Python with a practical and job-focused guide </b></p> <p><i>Job Ready Python </i>offers readers a straightforward and elegant approach to learning Python that emphasizes hands-on and employable skills you can apply to real-world environments immediately. </p> <p>Based on the renowned mthree Global Academy and Software Guild training program, this book will get you up to speed in the basics of Python, loops and data structures, object-oriented programming, and data processing. You’ll also get: </p> <ul> <li>Thorough discussions of Extract, Transform, and Load (ETL) scripting in Python </li> <li>Explorations of databases, including MySQL, and MongoDB—all commonly used database platforms in the field </li> <li>Simple, step-by-step approaches to dealing with dates and times, CSV files, and JSON files </li> </ul> <p>Ideal for Python newbies looking to make a transition to an exciting new career, <i>Job Ready Python</i> also belongs on the bookshelves of Python developers hoping to brush up on the fundamentals with an authoritative and practical new handbook. </p>",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1119817390"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781119817390"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 688,
+        "printedPageCount": 848,
+        "printType": "BOOK",
+        "categories": [
+          "Computers / Languages / Python",
+          "Computers / Programming / Object Oriented",
+          "Computers / Programming / Open Source",
+          "Computers / Programming / General"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73xj2kpPeXv6zPZwR6ibh8sg9x2X9IWV_mJ653sqfhX-HQI485TNKYX7CBINeFwPMALrn4nW7qy6e4Wm0BxVEzV_5lDPcrERlDjLDt5PCb55nBpXh5XltODJmLizMODkMaDhrOl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73cEuQfX9Ja9v60GP-XLN3qReclwrvwvNi1i8QVQLkS3XNkeVVkHAZY0oXjz2Y1EWNwMUqmqcY_nbA6vK9ecHNQyTgThDH56G8SdtDwDZoZTc7tIzvG3--aXGEtpIXuDY2u8eP-&source=gbs_api",
+          "small": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE719K2OxXT15EzAljztoiRlSbn9weExDUoTDw-4hSna7EljQhHAljdIwRXhhjU9hnwk3D442A8W6Jm6okBNtGIbbLX_W82pHI__zykxb3eKf1eouW2PH2F3MhAzqBT54_EZNu5yj&source=gbs_api",
+          "medium": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70Bqv75ZTzYHO7pLNW8o2tJwTDK6vD7Q-8E5tOWraInCv-5shK1W5s_Ok4lwRXUcM145DmZm2b1V4oZxKa5mpZId6ax-kEoReLVl-CtcbBkSJ85sL1R-Eo1mAk4tSHt9YlF-kwK&source=gbs_api",
+          "large": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE72Wvv2mk1MoKks3CmX39f35QBVWuNTNyi4cvMW8nm_Xt4zEOuZFxFi1JCnDG--QPbYGLoZJlVeAE7GNo6GgSASHrP9OQibGKh7Ka3csAPofGhqsfKCh7U-5HERX1iXZ6724EXBP&source=gbs_api",
+          "extraLarge": "http://books.google.com/books/publisher/content?id=udlJEAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE722yStiVX-ENW3bA-CznJByERWw5eVQhHsUkYA1xSODO93KIyUb6GdpE6XezR5YO6TYzMawhbb-bF56q3pAGOTZG9SeWY0BCE3FKOjKAgNYkkRkKOlHgn4z12mJ_G_1KzaDa1yr&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=udlJEAAAQBAJ&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=udlJEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=udlJEAAAQBAJ"
+      },
+      "layerInfo": {
+        "layers": [
+          {
+            "layerId": "geo",
+            "volumeAnnotationsVersion": "6"
+          }
+        ]
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 24,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 24,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=udlJEAAAQBAJ&rdid=book-udlJEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 24000000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 24000000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Job_Ready_Python-sample-epub.acsm?id=udlJEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Job_Ready_Python-sample-pdf.acsm?id=udlJEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=udlJEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ],
+  "__v": 3,
+  "reviews": [
+    {
+      "userId": {
+        "$oid": "65610e2c15d53181b8b882df"
+      },
+      "rating": 5,
+      "comment": "another test",
+      "date": {
+        "$date": "2023-12-06T20:36:48.252Z"
+      },
+      "hidden": false,
+      "username": "wye",
+      "_id": {
+        "$oid": "6570db6063802e95c649fc08"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6571422fe865885dc428d997"
+  },
+  "userId": {
+    "$oid": "65713c21e865885dc428d89e"
+  },
+  "booklistId": "6571422fe865885dc428d995",
+  "totalItems": 2,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "p1heDgAAQBAJ",
+      "etag": "/lFUIBPCK2c",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/p1heDgAAQBAJ",
+      "volumeInfo": {
+        "title": "Designing Data-Intensive Applications",
+        "subtitle": "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
+        "authors": [
+          "Martin Kleppmann"
+        ],
+        "publisher": "\"O'Reilly Media, Inc.\"",
+        "publishedDate": "2017-03-16",
+        "description": "<p>Data is at the center of many challenges in system design today. Difficult issues need to be figured out, such as scalability, consistency, reliability, efficiency, and maintainability. In addition, we have an overwhelming variety of tools, including relational databases, NoSQL datastores, stream or batch processors, and message brokers. What are the right choices for your application? How do you make sense of all these buzzwords?</p><p>In this practical and comprehensive guide, author Martin Kleppmann helps you navigate this diverse landscape by examining the pros and cons of various technologies for processing and storing data. Software keeps changing, but the fundamental principles remain the same. With this book, software engineers and architects will learn how to apply those ideas in practice, and how to make full use of data in modern applications.</p><ul><li>Peer under the hood of the systems you already use, and learn how to use and operate them more effectively</li><li>Make informed decisions by identifying the strengths and weaknesses of different tools</li><li>Navigate the trade-offs around consistency, scalability, fault tolerance, and complexity</li><li>Understand the distributed systems research upon which modern databases are built</li><li>Peek behind the scenes of major online services, and learn from their architectures</li></ul>",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1491903104"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781491903100"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 616,
+        "printedPageCount": 658,
+        "printType": "BOOK",
+        "categories": [
+          "Computers / Business & Productivity Software / Databases",
+          "Computers / Data Science / Data Modeling & Design"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.26.29.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73QyeNCs1Mp9ptzaZpy2ybKlFjMGpRJwMVF1eujYCtMRvZDsZEYaLdULhWoKgH-TzELHVIMUSU19R8xaks-h0WJeMC0khxX4np4TnLbQj-PiVRhKFeSm40V-WXqSavJ_AhzcMiE&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72Xi8WpYT2ldA_D4UDEPzLCeil9J7ZF97Jn3PikggzVOR1weM_OQ_dthJdnUx0mUt_V0U6A_kRAnCG3f22aFHwhHt2MlKZT8LiYPsLnw8jPn-gk6xiHrUwSwJLpknOspjUOOO_l&source=gbs_api",
+          "small": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE72Qoq97GvAYzCKqMAXWauZxDib4WKChLwzG4AjenAEXRxddtuHqilG70kCOlGDkxP1m3Q5FgHBtBjZybAlNuWZz9rNRjjCj8DhC-E08ZE1rAVauCgtKBQXeYWxa39Y2-_H6r7lz&source=gbs_api",
+          "medium": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70Z6e0vA6GWDNZzZskypel2WsbaT7RFPFLiM7VZN4m0p__Jh6OwwrZZgqyWeuZe8jNrNLlH8ARRxktLrGDuVsg3r_D_VkfCLwQ6eHQRpjbMFU6IOl0_npHJ49PSuX31wwSl1UmS&source=gbs_api",
+          "large": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE729AltTT2HEjTwS5JRtbZzxKUkCcy8-iTgOvyMKh22b9YsDwXvtxjne8dEpy9Us75HtXhYGK_i2woYVzDc714rwG5nFdRoSvEzZZNGp8TRZaftirnZ7J2k0iNcGVadQNI9qYf1C&source=gbs_api",
+          "extraLarge": "http://books.google.com/books/publisher/content?id=p1heDgAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE70iNOKbCSDGVQe__M7zX-Dr82wGScpVJhrjSK3zXlKB2z9wGyM9wp-mJ345Ni5p5FsSgKPikVFgPSI9Cs0bKXfhYBZwIg4nRGFle18D7vuZxFR7CpSwPt2EnaYodZCMHGtwAMJa&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=p1heDgAAQBAJ&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=p1heDgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=p1heDgAAQBAJ"
+      },
+      "layerInfo": {
+        "layers": [
+          {
+            "layerId": "geo",
+            "volumeAnnotationsVersion": "31"
+          }
+        ]
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 50.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 50.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=p1heDgAAQBAJ&rdid=book-p1heDgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 50990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 50990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=p1heDgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "1MhcEAAAQBAJ",
+      "etag": "SEtGSHlGR0M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/1MhcEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Antarcticness",
+        "subtitle": "Inspirations and imaginaries",
+        "authors": [
+          "Ilan Kelman"
+        ],
+        "publisher": "UCL Press",
+        "publishedDate": "2022-02-08",
+        "description": "<p>Antarcticness joins disciplines, communication approaches and ideas to explore meanings and depictions of Antarctica. Personal and professional words in poetry and prose, plus images, present and represent Antarctica, as presumed and as imagined, alongside what is experienced around the continent and by those watching from afar. These understandings explain how the Antarctic is viewed and managed while identifying aspects which should be more prominent in policy and practice.</p><p>The authors and artists place Antarctica, and the perceptions and knowledge through Antarcticness, within inspirations and imaginations, without losing sight of the multiple interests pushing the continent’s governance as it goes through rapid political and environmental changes. Given the diversity and disparity of the influences and changes, the book’s contributions connect to provide a more coherent and encompassing perspective of how society views Antarctica, scientifically and artistically, and what the continent provides and could provide politically, culturally and environmentally.</p><p>Offering original research, art and interpretations of different experiences and explorations of Antarctica, explanations meld with narratives while academic analyses overlap with first-hand experiences of what Antarctica does and does not – could and could not – bring to the world.</p>",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1800081448"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781800081444"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 336,
+        "printedPageCount": 338,
+        "printType": "BOOK",
+        "categories": [
+          "Social Science / Human Geography"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.0.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/publisher/content?id=1MhcEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE72k8ArykF_7aHT2tyneMS3c-JEhS-m8Q6npP0QbsO1t9huHRlafpy4JuPU1fgkEXvO49tW9mWEcq8C9vorSP2MESHrCK5FjJ7xbl9_WEbAHo21TfenUCivgnUliFn5uTuGFDJTy&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/publisher/content?id=1MhcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72mKkcswddgrA4HMZmFZh9K9nsb2lEeG33GwqpkXc8x40_M3v_mupHU9NjB36e1Cf01hJ6dnetuhDEXM53HgOPCFV-ZdB9ONFV9DHnWQCqltuv4fAU-8ES4FZ1ZgZu7rvH_HJr3&source=gbs_api",
+          "small": "http://books.google.com/books/publisher/content?id=1MhcEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE72N-mP867zWqfRwcCDQrNrRCupDDJEYOIwZzAzg7pHgYgHvon__eOvWMceD9TzPAyKg6Wlp-85K-1bW36syBzOmDUzTnlxyfigetZsxPhLLcVvjfkWZ-igqJPtYms7vZCcjEjaS&source=gbs_api",
+          "medium": "http://books.google.com/books/publisher/content?id=1MhcEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE73eAib6nKLFo01wXY2RP3b5micgHqRJIbZ7okxVxbqssHjiy1gNjgsJs9V_JC7Xtz-yYqru7E4FfTijDpQhND8zCHRapk15yary12Jk6lKajvpSpIN3DoJ7ckiSSwS7BrmIB-Lz&source=gbs_api",
+          "large": "http://books.google.com/books/publisher/content?id=1MhcEAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE73tFKjUC9y2rbB_kBlCGxpsJarRkNebL-ue_oG5R3fC7cdnElPARZifdmLI2YvLjXJP1Ejh4pIE81SFxYayAev8BbqVcGDrBlVCcUAKOWORbR3Pvq5Ezw9vS_mqnfWp9GXhHWRB&source=gbs_api",
+          "extraLarge": "http://books.google.com/books/publisher/content?id=1MhcEAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73ujliDGeiDb9vAFMDESX__Xilf_DqQVz8JYj78S-xFLMZJGkcPNvFiNFI2YOyQg4L-BwsRrsvE7jrhDwOeOZoemYiM9PhdqIlpjcOiNUgh7TF_LnXhOPUjNOV5m0dIIpK4aWX1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=1MhcEAAAQBAJ&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=1MhcEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=1MhcEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 0,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 0,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=1MhcEAAAQBAJ&rdid=book-1MhcEAAAQBAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Antarcticness.pdf?id=1MhcEAAAQBAJ&hl=&output=pdf&sig=ACfU3U1ijER0w9baSIimtAuw-eSk0z3UzA&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=1MhcEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "userId": {
+        "$oid": "65713c21e865885dc428d89e"
+      },
+      "rating": 0,
+      "comment": "ada",
+      "date": {
+        "$date": "2023-12-08T19:56:18.493Z"
+      },
+      "hidden": false,
+      "username": "admin",
+      "_id": {
+        "$oid": "657374e2097e969e12d60619"
+      }
+    }
+  ],
+  "__v": 3
+}]
