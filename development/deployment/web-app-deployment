@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-app
+  template:
+    metadata:
+      labels:
+        app: web-app
+    spec:
+      containers:
+      - name: backend
+        image: gcr.io/$PROJECT_ID/bookstore-backend:latest
+        ports:
+        - containerPort: 3001 # Assuming backend runs on port 8080
+        imagePullPolicy: Always
+      - name: frontend
+        image: gcr.io/$PROJECT_ID/bookstore-frontend:latest
+        ports:
+        - containerPort: 80 # Assuming frontend serves on port 80
+        imagePullPolicy: Always
