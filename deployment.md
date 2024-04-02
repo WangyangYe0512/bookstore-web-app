@@ -121,6 +121,40 @@ Change to the directory where your MongoDB Kubernetes configuration files are lo
 cd development/database/deployment
 ```
 
+#### 4.4 Build and Push the Docker Image
+
+Change to the directory where stored the data and Dockerfile for MongoDB:
+
+```
+cd data
+```
+
+Then build an image for MongoDB:
+
+```
+docker build -t bookstore-mongo .
+```
+
+Tag your Docker image with the GCR registry name. The tag should follow the format `gcr.io/[PROJECT-ID]/[IMAGE]`.
+
+```
+docker tag bookstore-mongo gcr.io/$PROJECT_ID/bookstore-mongo:latest
+```
+
+Before you can push to GCR, you need to authenticate Docker with your GCP credentials. You can do this using the `gcloud` command:
+
+```
+gcloud auth configure-docker
+```
+
+This command configures Docker to use `gcloud` as a credential helper, so it can automatically use your GCP credentials.
+
+Now, you can push the image to GCR:
+
+```
+docker push gcr.io/$PROJECT_ID/bookstore-mongo:latest
+```
+
 #### 4.4 Deploy MongoDB
 
 Create the development namespace:
