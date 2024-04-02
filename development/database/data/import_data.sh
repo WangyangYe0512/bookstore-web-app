@@ -1,9 +1,15 @@
-# Loop over each JSON file in the current directory and import it into MongoDB
-for file in *.json; do
-  # Use the filename without the extension as the collection name
-  COLLECTION_NAME=$(basename "$file" .json)
-  # Copy the JSON file to the MongoDB pod
-  kubectl "./${file}" "development/${MONGO_POD}:/tmp/${file}"
-  # Import the JSON file into the MongoDB collection
-  kubectl exec -it $MONGO_POD -n development -- mongoimport --db bookstore --collection $COLLECTION_NAME --file "/tmp/${file}"
+#!/bin/bash
+
+# Start MongoDB in the background
+mongod --fork --logpath /var/log/mongod.log
+
+# Wait a bit for mongod to start
+sleep 5
+
+# Import the JSON data into MongoDB
+for file in /mongo_data/*.json; do
+  mongoimport --db bookstore --collection $(basename "$file" .json) --file "$file" --jsonArray
 done
+
+# Now bring the foreground process to a halt
+wait
