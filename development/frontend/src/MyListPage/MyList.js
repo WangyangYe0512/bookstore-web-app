@@ -18,12 +18,12 @@ function Bookshelves() {
   const [isLoggedIn,setIsLoggedIn]=useState(cookiesToken!==undefined?true:false);
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
-  const GET_BOOKSHELVES_URL = 'http://3.144.5.98:3000/api/bookshelf';
-  const GET_BOOKSHELF_BOOKLIST_URL = 'http://3.144.5.98:3000/api/bookshelf/booklist?booklistId=';
-  const DELETE_BOOKSHELF_URL = 'http://3.144.5.98:3000/api/bookshelf/delete?bookshelfId=';
-  const CREATE_BOOKSHELF_URL = 'http://3.144.5.98:3000/api/bookshelf/create';
-  const DELETE_BOOK_FROM_BOOKSHELF_URL = 'http://3.144.5.98:3000/api/bookshelf/booklist/delete?booklistId=';
-  const ADD_REVIEW_URL = 'http://3.144.5.98:3000/api/review/add';
+  const GET_BOOKSHELVES_URL = 'http://'+window.location.hostname+'/api/bookshelf';
+  const GET_BOOKSHELF_BOOKLIST_URL = 'http://'+window.location.hostname+'/api/bookshelf/booklist?booklistId=';
+  const DELETE_BOOKSHELF_URL = 'http://'+window.location.hostname+'/api/bookshelf/delete?bookshelfId=';
+  const CREATE_BOOKSHELF_URL = 'http://'+window.location.hostname+'/api/bookshelf/create';
+  const DELETE_BOOK_FROM_BOOKSHELF_URL = 'http://'+window.location.hostname+'/api/bookshelf/booklist/delete?booklistId=';
+  const ADD_REVIEW_URL = 'http://'+window.location.hostname+'/api/review/add';
   const NO_IMAGE_URL = 'https://www.gmt-sales.com/wp-content/uploads/2015/10/no-image-found.jpg';
   
   
