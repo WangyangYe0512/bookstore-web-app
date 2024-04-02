@@ -192,17 +192,27 @@ mongodb://mongodb-service.development.svc.cluster.local:27017/bookstore
 
 ### Step 5 : Deploy Web App
 
+Build and Push the Docker Image for frontend:
+
 ```
 cd ../frontend
 docker build -t bookstore-frontend .
 docker tag bookstore-frontend gcr.io/$PROJECT_ID/bookstore-frontend:latest
 docker push gcr.io/$PROJECT_ID/bookstore-frontend:latest
+kubectl rollout restart deployment web-app-deployment
+```
 
+Then build and push Docker for backend in same way:
+```
 cd ../backend
 docker build -t bookstore-backend .
 docker tag bookstore-backend gcr.io/$PROJECT_ID/bookstore-backend:latest
 docker push gcr.io/$PROJECT_ID/bookstore-backend:latest
+```
 
+Finally, you can deploy your web app:
+
+```
 cd ../deployment
 sed "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-deployment.yaml | kubectl apply -f -
 kubectl apply -f frontend-service.yaml
