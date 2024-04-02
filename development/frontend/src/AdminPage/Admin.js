@@ -18,10 +18,10 @@ import React,{ useState,useEffect } from "react";
 import Cookies from 'js-cookie';
 
 function Admin(){
-    const GET_USER_URL='http://'+window.location.hostname+':3001/api/admin/users';
-    const GET_REVIEW_URL='http://'+window.location.hostname+':3001/api/admin/get-reviews';
-    const UPDATE_USER_URL='http://'+window.location.hostname+':3001/api/admin/update-user';
-    const UPDATE_REVIEW='http://'+window.location.hostname+':3001/api/admin/update-review';
+    const GET_USER_URL='http://'+window.location.hostname+'/api/admin/users';
+    const GET_REVIEW_URL='http://'+window.location.hostname+'/api/admin/get-reviews';
+    const UPDATE_USER_URL='http://'+window.location.hostname+'/api/admin/update-user';
+    const UPDATE_REVIEW='http://'+window.location.hostname+'/api/admin/update-review';
     const cookiesToken=Cookies.get("token");
     const [users,setUsers]=useState([]);
     const [reviews,setReviews]=useState([]);

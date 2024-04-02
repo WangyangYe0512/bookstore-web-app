@@ -16,10 +16,10 @@ function BookDetail() {
   const [selectedBookshelf, setSelectedBookshelf] = useState(null);
   const NO_IMAGE_URL = 'https://www.gmt-sales.com/wp-content/uploads/2015/10/no-image-found.jpg';
   const GOOGLE_BOOKS_API_URL = 'https://www.googleapis.com/books/v1/volumes/';
-  const ADD_TO_CART_URL = 'http://'+window.location.hostname+':3001/api/cart/add'
-  const GET_BOOKSHELVES_URL = 'http://'+window.location.hostname+':3001/api/bookshelf';
-  const GET_BOOKSHELF_BOOKLIST_URL = 'http://'+window.location.hostname+':3001/api/bookshelf/booklist?booklistId=';
-  const ADD_TO_BOOKLIST_URL = 'http://'+window.location.hostname+':3001/api/bookshelf/booklist/add'
+  const ADD_TO_CART_URL = 'http://'+window.location.hostname+'/api/cart/add'
+  const GET_BOOKSHELVES_URL = 'http://'+window.location.hostname+'/api/bookshelf';
+  const GET_BOOKSHELF_BOOKLIST_URL = 'http://'+window.location.hostname+'/api/bookshelf/booklist?booklistId=';
+  const ADD_TO_BOOKLIST_URL = 'http://'+window.location.hostname+'/api/bookshelf/booklist/add'
 
   
   console.log(isLoggedIn)
