@@ -157,6 +157,12 @@ docker push gcr.io/$PROJECT_ID/bookstore-mongo:latest
 
 #### 4.4 Deploy MongoDB
 
+Now change direction to deployment where stored the YAML files:
+
+```
+cd ../deployment
+```
+
 Create the development namespace:
 
 ```
@@ -166,7 +172,7 @@ kubectl create namespace development
 Apply the MongoDB deployment and service YAML files:
 
 ```
-kubectl apply -f mongodb-deployment.yaml
+sed "s/\$PROJECT_ID/${PROJECT_ID}/g" mongodb-deployment.yaml | kubectl apply -f -
 kubectl apply -f mongodb-service.yaml
 ```
 
