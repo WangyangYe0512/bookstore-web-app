@@ -57,7 +57,7 @@ function BookDetail() {
     };
   
     try {
-      const response = await axios.post('http://'+window.location.hostname+'/api/cart/add', bookData, {
+      const response = await axios.post('http://'+window.location.hostname+':3001/api/cart/add', bookData, {
         headers: { 'Authorization': `Bearer ${cookiesToken}` }
       });
       console.log(response.data);

@@ -19,9 +19,9 @@ import Cookies from 'js-cookie';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 export default function QuantityEditCart() {
-    const GET_BOOKS_URL='http://'+window.location.hostname+'/api/cart/';
-    const UPDATE_BOOK_URL='http://'+window.location.hostname+'/api/cart/update';
-    const REMOVE_BOOK_URL='http://'+window.location.hostname+'/api/cart/remove';
+    const GET_BOOKS_URL='http://'+window.location.hostname+':3001/api/cart/';
+    const UPDATE_BOOK_URL='http://'+window.location.hostname+':3001/api/cart/update';
+    const REMOVE_BOOK_URL='http://'+window.location.hostname+':3001/api/cart/remove';
     const cookiesToken=Cookies.get("token");
     const [items,setItems]=useState([]);
     
