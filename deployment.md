@@ -144,3 +144,7 @@ Verify that the MongoDB pod is up and running:
 kubectl get pods -n development
 ```
 
+```
+MONGO_POD=$(kubectl get pod -l "app=mongodb-dev" -n development -o jsonpath="{.items[0].metadata.name}")
+```
+
