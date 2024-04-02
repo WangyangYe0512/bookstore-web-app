@@ -5,7 +5,7 @@ RUN mkdir /mongo_data
 WORKDIR /mongo_data
 
 # Copy the JSON files into the image
-COPY /data/*.json /mongo_data/
+COPY ./*.json /mongo_data/
 
 # Copy the import script into the image
 COPY import_data.sh /mongo_data/
