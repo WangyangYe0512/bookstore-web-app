@@ -155,7 +155,7 @@ Now, you can push the image to GCR:
 docker push gcr.io/$PROJECT_ID/bookstore-mongo:latest
 ```
 
-#### 4.4 Deploy MongoDB
+#### 4.5 Deploy MongoDB
 
 Now change direction to deployment where stored the YAML files:
 
@@ -176,11 +176,17 @@ sed "s/\$PROJECT_ID/${PROJECT_ID}/g" mongodb-deployment.yaml | kubectl apply -f 
 kubectl apply -f mongodb-service.yaml
 ```
 
-#### 3.5 Confirm Deployment
+#### 4.6 Confirm Deployment
 
 Verify that the MongoDB pod is up and running:
 
 ```
 kubectl get pods -n development
+```
+
+Now you can access to MongoDB by:
+
+```
+mongodb://mongodb-service.development.svc.cluster.local:27017/bookstore
 ```
 
