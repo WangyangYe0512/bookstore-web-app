@@ -118,7 +118,7 @@ git pull origin dev
 Change to the directory where your MongoDB Kubernetes configuration files are located:
 
 ```
-cd development/database/deployment
+cd development
 ```
 
 #### 4.4 Build and Push the Docker Image
@@ -126,7 +126,7 @@ cd development/database/deployment
 Change to the directory where stored the data and Dockerfile for MongoDB:
 
 ```
-cd data
+cd database
 ```
 
 Then build an image for MongoDB:
@@ -188,5 +188,24 @@ Now you can access to MongoDB by:
 
 ```
 mongodb://mongodb-service.development.svc.cluster.local:27017/bookstore
+```
+
+### Step 5 : Deploy Web App
+
+```
+cd ../frontend
+docker build -t bookstore-frontend .
+docker tag bookstore-frontend gcr.io/$PROJECT_ID/bookstore-frontend:latest
+docker push gcr.io/$PROJECT_ID/bookstore-frontend:latest
+
+cd ../backend
+docker build -t bookstore-backend .
+docker tag bookstore-backend gcr.io/$PROJECT_ID/bookstore-backend:latest
+docker push gcr.io/$PROJECT_ID/bookstore-backend:latest
+
+cd ../deployment
+sed "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-deployment.yaml | kubectl apply -f -
+kubectl apply -f frontend-service.yaml
+kubectl apply -f backend-service.yaml
 ```
 
