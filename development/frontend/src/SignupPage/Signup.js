@@ -4,7 +4,7 @@ import Validation from './SignupValidation';
 import axios from 'axios';
 
 function Signup(){
-    const REGISTER_URL='http://'+window.location.hostname+'/api/secure/register/';
+    const REGISTER_URL='/api/secure/register/';
     const [messages,setMessages]=useState();
     const [values,setValues]=useState({
         userName:'',

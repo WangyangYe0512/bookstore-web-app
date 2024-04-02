@@ -7,8 +7,8 @@ import Cookies from 'js-cookie';
 
 
 function Login(){
-    const LOGIN_URL='http://'+window.location.hostname+'/api/secure/login/';
-    const VERIFY_URL='http://'+window.location.hostname+'/api/secure/verify-email';
+    const LOGIN_URL='/api/secure/login/';
+    const VERIFY_URL='/api/secure/verify-email';
     const navigate=useNavigate();
     const [messages,setMessages]=useState(
         {

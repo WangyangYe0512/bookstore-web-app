@@ -15,9 +15,9 @@ function Bookshelves() {
   const [isLoggedIn,setIsLoggedIn]=useState(cookiesToken!==undefined?true:false);
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
-  const PUBLIC_BOOKSHELF_URL = 'http://'+window.location.hostname+'/api/open/bookshelf'
-  const PUBLIC_BOOKSHELF_BOOKLIST_URL = 'http://'+window.location.hostname+'/api/open/booklist?booklistId='
-  const ADD_REVIEW_URL = 'http://'+window.location.hostname+'/api/review/add';
+  const PUBLIC_BOOKSHELF_URL = '/api/open/bookshelf'
+  const PUBLIC_BOOKSHELF_BOOKLIST_URL = '/api/open/booklist?booklistId='
+  const ADD_REVIEW_URL = '/api/review/add';
   const NO_IMAGE_URL = 'https://www.gmt-sales.com/wp-content/uploads/2015/10/no-image-found.jpg';
 
   useEffect(() => {
