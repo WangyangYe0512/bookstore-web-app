@@ -37,7 +37,7 @@ gcloud config set project $PROJECT_ID
 **Step 2.1:** Enable the Kubernetes Engine API for your project.
 
 - CLI:
-
+  
   ```
   gcloud services enable container.googleapis.com
   ```
@@ -45,7 +45,7 @@ gcloud config set project $PROJECT_ID
 **Step 2.2:** Create a GKE cluster.
 
 - CLI:
-
+  
   ```
   gcloud container clusters create "$CLUSTER_NAME" --zone "$COMPUTE_ZONE"
   ```
@@ -63,14 +63,14 @@ gcloud container clusters get-credentials "$CLUSTER_NAME" --zone "$COMPUTE_ZONE"
 - Open a terminal or command prompt.
 
 - Set up your user name and email address with the following commands:
-
+  
   ```
   git config --global user.name "Your Name"
   git config --global user.email "your_email@example.com"
   ```
 
 - Ensure your git configuration is correctly set up by checking the configuration list:
-
+  
   ```
   git config --list
   ```
@@ -79,9 +79,9 @@ gcloud container clusters get-credentials "$CLUSTER_NAME" --zone "$COMPUTE_ZONE"
 
 To clone the project repository, you can use https:
 
- ```
-  git clone https://github.com/WangyangYe0512/bookstore-web-app.git
- ```
+```
+ git clone https://github.com/WangyangYe0512/bookstore-web-app.git
+```
 
 or SSH:
 
@@ -113,70 +113,22 @@ Ensure you have the latest version of your files:
 git pull origin dev
 ```
 
-#### 4.3 Navigate to the Deployment Directory
-
-Change to the directory where your MongoDB Kubernetes configuration files are located:
-
-```
-cd development
-```
-
-#### 4.4 Build and Push the Docker Image
-
-Change to the directory where stored the data and Dockerfile for MongoDB:
-
-```
-cd database
-```
-
-Then build an image for MongoDB:
-
-```
-docker build -t bookstore-mongo .
-```
-
-Tag your Docker image with the GCR registry name. The tag should follow the format `gcr.io/[PROJECT-ID]/[IMAGE]`.
-
-```
-docker tag bookstore-mongo gcr.io/$PROJECT_ID/bookstore-mongo:latest
-```
-
-Before you can push to GCR, you need to authenticate Docker with your GCP credentials. You can do this using the `gcloud` command:
-
-```
-gcloud auth configure-docker
-```
-
-This command configures Docker to use `gcloud` as a credential helper, so it can automatically use your GCP credentials.
-
-Now, you can push the image to GCR:
-
-```
-docker push gcr.io/$PROJECT_ID/bookstore-mongo:latest
-```
-
-#### 4.5 Deploy MongoDB
+#### 4.3 Deploy MongoDB
 
 Now change direction to deployment where stored the YAML files:
 
 ```
-cd ../deployment
-```
-
-Create the development namespace:
-
-```
-kubectl create namespace development
+cd deployment2
 ```
 
 Apply the MongoDB deployment and service YAML files:
 
 ```
-sed "s/\$PROJECT_ID/${PROJECT_ID}/g" mongodb-deployment.yaml | kubectl apply -f -
-kubectl apply -f mongodb-service.yaml
+kubectl apply -f mongodb-official-deployment.yaml
+kubectl apply -f mongodb-official-service.yaml
 ```
 
-#### 4.6 Confirm Deployment
+#### 4.4 Confirm Deployment
 
 Verify that the MongoDB pod is up and running:
 
@@ -203,6 +155,7 @@ kubectl rollout restart deployment web-app-deployment
 ```
 
 Then build and push Docker for backend in same way:
+
 ```
 cd ../backend
 docker build -t bookstore-backend .
@@ -214,8 +167,58 @@ Finally, you can deploy your web app:
 
 ```
 cd ../deployment
-sed "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-deployment.yaml | kubectl apply -f -
+sed "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-deployment.yaml 
 kubectl apply -f frontend-service.yaml
-kubectl apply -f backend-service.yaml
 ```
 
+## For Production Environment
+
+
+
+```
+export CLUSTER_NAME=web-app-production-cluster
+export COMPUTE_ZONE=us-east1-b
+```
+
+### Step 1: Create Another Cluster:
+
+```
+gcloud container clusters create $CLUSTER_NAME --zone $COMPUTE_ZONE --disk-size=100 --num-nodes=3
+```
+
+may need to switch k8s context (multiple cluster)
+
+```
+gcloud container clusters get-credentials "$CLUSTER_NAME" --zone "$COMPUTE_ZONE" --project "$PROJECT_ID"
+```
+
+```
+kubectl config get-contexts
+```
+
+```
+kubectl config use-context YOUR_CONTEXT_NAME
+```
+
+### Step 2: deploy application
+
+change directory "bookstore-web-app/production/deployment"
+
+```
+cd production/deployment
+kubectl apply -f mongodb-official-deployment.yaml
+kubectl apply -f mongodb-official-pvc.yaml
+kubectl apply -f mongodb-official-service.yaml
+```
+
+"**Image**"" may need to change  in **web-app-production-deployment.yaml** file 
+
+**frontend**: gcr.io/$PROJECT_ID/bookstore-frontend:latest
+
+**backend**: gcr.io/$PROJECT_ID/bookstore-backend:latest
+
+```
+sed "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-production-deployment.yaml
+kubectl apply -f web-app-production-deployment.yaml
+kubectl apply -f web-app-production-service.yaml
+```
