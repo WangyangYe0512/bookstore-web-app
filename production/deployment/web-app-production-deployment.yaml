@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-production
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app-production
+  template:
+    metadata:
+      labels:
+        app: my-app-production
+    spec:
+      containers:
+      - name: backend
+        image: us-east4-docker.pkg.dev/ece-9016/my-repository/backend:v1.0
+        ports:
+        - containerPort: 3001 # Assuming backend runs on port 8080
+        imagePullPolicy: Always
+      - name: frontend
+        image: us-east4-docker.pkg.dev/ece-9016/my-repository/frontend:v1.0
+        ports:
+        - containerPort: 80 # Assuming frontend serves on port 80
+        imagePullPolicy: Always
+
+                                                                                                                                              
