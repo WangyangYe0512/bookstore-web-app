@@ -14,12 +14,12 @@ spec:
     spec:
       containers:
       - name: backend
-        image: us-east4-docker.pkg.dev/ece-9016/my-repository/backend:v1.0
+        image: $REPO_REGION-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/bookstore-backend:latest
         ports:
         - containerPort: 3001 # Assuming backend runs on port 8080
         imagePullPolicy: Always
       - name: frontend
-        image: us-east4-docker.pkg.dev/ece-9016/my-repository/frontend:v1.0
+        image: $REPO_REGION-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/bookstore-frontend:latest
         ports:
         - containerPort: 80 # Assuming frontend serves on port 80
         imagePullPolicy: Always
