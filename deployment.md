@@ -173,7 +173,9 @@ kubectl apply -f frontend-service.yaml
 
 ## For Production Environment
 
+### Step 0: Set environment variables
 
+Set environment variables  for further use: 
 
 ```
 export CLUSTER_NAME=web-app-production-cluster
@@ -202,6 +204,12 @@ kubectl config use-context YOUR_CONTEXT_NAME
 
 ### Step 2: deploy application
 
+Checkout production branch of github
+
+```
+git checkout prod
+```
+
 change directory "bookstore-web-app/production/deployment"
 
 ```
@@ -222,3 +230,4 @@ sed "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-production-deployment.yaml
 kubectl apply -f web-app-production-deployment.yaml
 kubectl apply -f web-app-production-service.yaml
 ```
+
