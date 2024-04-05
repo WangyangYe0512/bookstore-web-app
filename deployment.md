@@ -118,7 +118,7 @@ git pull origin dev
 Now change direction to deployment where stored the YAML files:
 
 ```
-cd deployment2
+cd deployment
 ```
 
 Apply the MongoDB deployment and service YAML files:
