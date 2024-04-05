@@ -47,7 +47,7 @@ gcloud config set project $PROJECT_ID
 - CLI:
   
   ```
-  gcloud container clusters create "$CLUSTER_NAME" --zone "$COMPUTE_ZONE"
+  gcloud container clusters create "$CLUSTER_NAME" --zone "$COMPUTE_ZONE" --num-nodes=1
   ```
 
 **Step 2.3:** Configure `kubectl` to use the cluster:
@@ -167,15 +167,13 @@ Finally, you can deploy your web app:
 
 ```
 cd ../deployment
-sed "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-deployment.yaml 
+sed -e "s/\$REPO_NAME/${REPO_NAME}/g" -e "s/\$REPO_REGION/${REPO_REGION}/g" -e "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-deployment.yaml | kubectl apply -f -
 kubectl apply -f frontend-service.yaml
 ```
 
 ## For Production Environment
 
-### Step 0: Set environment variables
 
-Set environment variables  for further use: 
 
 ```
 export CLUSTER_NAME=web-app-production-cluster
@@ -204,12 +202,6 @@ kubectl config use-context YOUR_CONTEXT_NAME
 
 ### Step 2: deploy application
 
-Checkout production branch of github
-
-```
-git checkout prod
-```
-
 change directory "bookstore-web-app/production/deployment"
 
 ```
@@ -226,8 +218,6 @@ kubectl apply -f mongodb-official-service.yaml
 **backend**: gcr.io/$PROJECT_ID/bookstore-backend:latest
 
 ```
-sed "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-production-deployment.yaml
-kubectl apply -f web-app-production-deployment.yaml
+sed "s/\$PROJECT_ID/${PROJECT_ID}/g" web-app-production-deployment.yaml | kubectl apply -f -
 kubectl apply -f web-app-production-service.yaml
 ```
-
